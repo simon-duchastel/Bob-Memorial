@@ -1,15 +1,11 @@
 (function() {
   const root = document.documentElement;
-  const mql = matchMedia('(prefers-color-scheme: dark)');
-  const saved = localStorage.getItem('theme');
 
   function apply(t) {
     root.classList.remove('dark', 'light');
     if (t === 'dark') root.classList.add('dark');
     else if (t === 'light') root.classList.add('light');
   }
-
-  apply(saved || (mql.matches ? 'dark' : 'light'));
 
   requestAnimationFrame(function() {
     root.classList.add('theme-ready');
