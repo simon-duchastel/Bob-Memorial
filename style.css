@@ -224,6 +224,7 @@ footer .github-icon {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  text-decoration: none;
 }
 
 .lightbox:target {
@@ -243,12 +244,10 @@ footer .github-icon {
   right: 1.5rem;
   color: #fff;
   font-size: 2rem;
-  text-decoration: none;
   opacity: 0.8;
-  z-index: 101;
   line-height: 1;
 }
 
-.lightbox-close:hover {
+.lightbox:hover .lightbox-close {
   opacity: 1;
 }
