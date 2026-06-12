@@ -45,14 +45,17 @@
     <p>Bob rests peacefully at <a href="https://petcem.com/" target="_blank" rel="noopener">Hartsdale Pet Cemetery</a> in Hartsdale, New York.</p>
 
     <figure>
-      <a href="#lightbox-map" class="lightbox-trigger"><img src="images/bob-map.jpg" alt="Bob's resting place at Hartsdale Pet Cemetery"></a>
+      <label for="lb-map" class="lightbox-trigger">
+        <img src="images/bob-map.jpg" alt="Bob's resting place at Hartsdale Pet Cemetery">
+      </label>
       <figcaption>Hartsdale Pet Cemetery</figcaption>
     </figure>
 
-    <a href="#" id="lightbox-map" class="lightbox" aria-label="Close lightbox">
+    <input type="checkbox" id="lb-map" hidden>
+    <label for="lb-map" class="lightbox">
       <span class="lightbox-close">&times;</span>
       <img src="images/bob-map.jpg" alt="Bob's resting place at Hartsdale Pet Cemetery">
-    </a>
+    </label>
 
     <p>
       <strong>Address:</strong><br>
